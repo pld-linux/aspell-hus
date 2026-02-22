@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Słownik języka wastek dla aspella
 Name:		aspell-hus
 Version:	0.03
 %define	subv	1
-Release:	2
+Release:	3
 License:	GPL v3+
 Group:		Applications/Text
 Source0:	http://ftp.gnu.org/gnu/aspell/dict/hus/aspell6-hus-%{version}-%{subv}.tar.bz2
