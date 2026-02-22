@@ -11,6 +11,7 @@ Source0:	http://ftp.gnu.org/gnu/aspell/dict/hus/aspell6-hus-%{version}-%{subv}.t
 URL:		http://aspell.net/
 BuildRequires:	aspell >= 3:0.60
 Requires:	aspell >= 3:0.60
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -40,7 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Copyright README
-%{_libdir}/aspell/hus.multi
-%{_libdir}/aspell/hus.rws
+%{_prefix}/lib/aspell/hus.multi
+%{_prefix}/lib/aspell/hus.rws
 %{_datadir}/aspell/hus.dat
 %{_datadir}/aspell/hus_affix.dat
